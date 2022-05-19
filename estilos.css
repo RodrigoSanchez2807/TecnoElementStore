@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+body{
+  background: #000000;
+  color: #000000;
+  background-color: #c5eef2;
+  background-image: url("imagenes/back.png");
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  background-size: cover;
+}
+
+ul{
+  list-style: none
+}
+
+.container{
+  width:90%;
+  margin: auto;
+  background-color: blueviolet;
+}
+
+/* Navigation*/
+.main{
+  font-size: 17px;
+  display: flex; /* organiza los elementos uno a lado de otro*/
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0px;
+}
+
+.logo{
+  width: 60px;
+}
+
+/*Nav left*/
+.main ul{
+  display:flex;
+}
+
+.main ul li{
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.main ul li a{
+  padding: 6px;
+}
+
+.main ul li a:hover{
+  border-bottom: 2px solid rgb(42, 8, 87);
+  color: #FFFF;
+}
+
+.main ul.menu{
+  flex: 1;
+  margin-left: 20px;
+}
+
+hr{
+  margin: 10px 0px;
+}
+
+.user{
+  padding: 20px 50px;
+  margin-top: 30px;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.profile{
+  width: 30px;
+  border-radius: 40%;
+  white-space: nowrap;
+}
+
+/*Catalogo--------------------------------------------------------------------------------------------------------------------*/
+.shop h1{
+  text-align: center;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.fotos{
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 80%;
+  white-space: nowrap;
+}
+
+/*Area que contiene los productos*/
+.seccion{
+  margin: auto;
+  width:90%;
+  color: #000000;
+  background-color: rgb(13, 228, 102); /*guia para crear el area*/
+  display: grid;
+  grid-template-columns: 50% ;
+  gap: 10px;
+}
+
+.btn-recomendar{ /*unicamente el boton / color para guia*/
+  color: rgb(255, 255, 255);
+  background: chartreuse; /*cambiarar*/
+  border: none;
+  outline: none;
+  border-radius: 10%;
+  height: 20px;
+  width: 90px;
+ }
+
+#copyright{
+  text-align: center;
+  color: #000000;
+}
+
+#copyright span{
+  color: rgb(255, 132, 0);
+}

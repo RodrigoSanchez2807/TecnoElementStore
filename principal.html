@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TecnoElement</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="stylesheet" href="estilos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">	
+	<meta charset="utf-8">
+	<link rel="icon" href="imagenes/logo.ico">
+</head>
+
+<body>
+	<div class="container">
+		<nav class="main">
+		<!-- Barra menu y logo-->
+			<img src="imagenes/logo.jpg" alt="Logo de TecnoElement" class="logo">
+			<ul class="menu">
+				<li>
+					<a class="active" href="comprar.php">Comprar ahora</a>
+				</li>
+
+				<li>
+					<a href="revisar_compras.php">Compras Realizadas</a>
+				</li>
+
+				<li>
+					<a href="fotoperfil.php">Cambiar foto de perfil</a>
+				</li>
+
+				<li>
+					<a href="cambio_contrasena.php">Cambiar Contraseña</a>
+				</li>
+
+				<li>
+					<a href="subirfotos.php">Foto de producto</a>
+				</li>
+
+				<li>
+					<a href="registroproducto.php">Registro Producto</a>
+				</li>
+
+			</ul>
+
+			<ul class="menu-right">
+				<li>
+					<a href="index.html">
+						<i class="fas fa-sign-out-alt">Salir</i>
+					</a>
+				</li>
+			</ul>
+
+			<!--Datos de usuario-->
+			
+
+		</nav>
+	</div>
+
+	<hr>
+
+	<div class="shop">
+		<H2>Nuestro catálogo</H2>
+
+
+
+		<!--BTN Recomendar-->
+		<form class="recomendar"id="frmrecomendar" name="frmrecomendar" method="POST" action="recomendar.php">
+			<input type="submit" id="btnrecomendar" name="btnrecomendar" value="Recomendar" class="btn-recomendar" />
+			<input type="hidden" id="txtrecomendar" name="txtrecomendar" readonly="" value=<?php echo $renglon["regClave"]; ?> />
+			<br /><br />
+		</form>
+
+	</div>
+
+
+
+	<hr>
+
+	<footer>
+		<div id="copyright">Copyright&copy; 2021 - Página creada por Rodrigo Sánchez López - Todos los derechos reservados.</div>
+	</footer>
+</body>
+
+</html>
